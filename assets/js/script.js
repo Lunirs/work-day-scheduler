@@ -19,6 +19,11 @@ $(".saveBtn").on("click", function () {
   localStorage.setItem(hr, text);
 });
 
+$(".resetBtn").on("click", function () {
+  localStorage.clear();
+  location.reload();
+});
+
 $("#hr1 .description").val(localStorage.getItem("hr1"));
 $("#hr2 .description").val(localStorage.getItem("hr2"));
 $("#hr3 .description").val(localStorage.getItem("hr3"));
